@@ -1,0 +1,19 @@
+|testMultiplication
+a[0] => Mult0.IN3
+a[1] => Mult0.IN2
+a[2] => Mult0.IN1
+a[3] => Mult0.IN0
+b[0] => Mult0.IN7
+b[1] => Mult0.IN6
+b[2] => Mult0.IN5
+b[3] => Mult0.IN4
+c[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+c[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+c[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+c[6] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+c[7] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+
+

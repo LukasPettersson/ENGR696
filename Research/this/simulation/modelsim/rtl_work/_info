@@ -1,0 +1,37 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Lukas\Documents\Research\this\simulation\modelsim
+vmultiTest
+!s100 zLOQWg`H=d<T_aUSFC?fb2
+IG??Ij228`_YzA7FGgRjTO0
+V[aO5Ted[^63YJznEdYJf]3
+w1577653245
+8C:/Users/Lukas/Documents/Research/this/multiTest.v
+FC:/Users/Lukas/Documents/Research/this/multiTest.v
+L0 1
+Z1 OV;L;6.5b;42
+r1
+!s85 0
+31
+!s101 -O0
+Z2 o-vlog01compat -work work -O0
+Z3 !s92 -vlog01compat -work work +incdir+C:/Users/Lukas/Documents/Research/this -O0
+nmulti@test
+vtestMultiplication
+IE`be?Tn9jTGj4mVEFh7J:3
+VRHnOI_Xkf<e6<9TeAmJE=3
+w1578343002
+8C:/Users/Lukas/Documents/Research/this/testMultiplication.v
+FC:/Users/Lukas/Documents/Research/this/testMultiplication.v
+L0 1
+R1
+r1
+31
+R2
+ntest@multiplication
+!s100 SY91XYiN;H^a^h^m]EZJD3
+!s85 0
+!s101 -O0
+R3
