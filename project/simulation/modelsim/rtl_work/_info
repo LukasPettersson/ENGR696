@@ -1,0 +1,36 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Lukas PC\Desktop\ENGR697\simulation\modelsim
+vstoreNumbers
+I9YPi^b3YoKAYBj;g]mIJM1
+Vc^hZ[>UM6aF_Ifm8<27G31
+w1599192545
+8C:/Users/Lukas PC/Desktop/ENGR697/storeNumbers.v
+FC:/Users/Lukas PC/Desktop/ENGR697/storeNumbers.v
+L0 1
+Z1 OV;L;6.5b;42
+r1
+31
+Z2 o-vlog01compat -work work -O0
+nstore@numbers
+!s100 M^34NohTn5ze?oheA>UfO0
+!s85 0
+!s101 -O0
+Z3 !s92 -vlog01compat -work work {+incdir+C:/Users/Lukas PC/Desktop/ENGR697} -O0
+vtb
+!s100 D[jMOBeB:a84`W^1`oEDf3
+IPX`R:DTdbE4=Ag9kE1cRB1
+VV@Xn<HnSRM[I5c1?BH]3a3
+w1599192522
+8C:/Users/Lukas PC/Desktop/ENGR697/tb.v
+FC:/Users/Lukas PC/Desktop/ENGR697/tb.v
+L0 3
+R1
+r1
+!s85 0
+31
+!s101 -O0
+R2
+R3
