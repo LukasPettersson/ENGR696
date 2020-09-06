@@ -20,8 +20,6 @@ module storeNumbers(
 	input [31:0] c; //cipher text
 	input clk;
 	input enIn, enOut;
-	integer i,j; 
-	integer counter;
 
 	output reg [4:0] countIn, countOut;
 	
