@@ -9,8 +9,8 @@ wire [31:0] primeNum, privateKey, cipher;
 integer i;
 
 
-
-storeNumbers dut(.n(n),.d(d),.c(c),.clk(clk), .primeNum(primeNum), .privateKey(privateKey), .cipher(cipher));
+//.primeNum(primeNum), .privateKey(privateKey), .cipher(cipher)
+storeNumbers dut(.n(n),.d(d),.c(c),.clk(clk), .primeNumOut(primeNum), .privateKeyOut(privateKey), .cipherOut(cipher));
 
 always  
 	#5 clk = ~clk;
