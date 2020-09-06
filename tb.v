@@ -2,15 +2,16 @@
 
 module tb;
 
+reg enIn, enOut;
 reg clk;
 reg [31:0] n,d,c;
 wire [31:0] m;
 wire [31:0] primeNum, privateKey, cipher;
 integer i;
-
+wire [4:0] countOut, countIn;
 
 //.primeNum(primeNum), .privateKey(privateKey), .cipher(cipher)
-storeNumbers dut(.n(n),.d(d),.c(c),.clk(clk), .primeNumOut(primeNum), .privateKeyOut(privateKey), .cipherOut(cipher));
+storeNumbers dut(.n(n),.d(d),.c(c),.clk(clk), .primeNumOut(primeNum), .privateKeyOut(privateKey), .cipherOut(cipher), .enIn(enIn), .enOut(enOut), .countOut(countOut), .countIn(countIn));
 
 always  
 	#5 clk = ~clk;
@@ -19,34 +20,157 @@ initial begin
 	clk = 0;
 	
 end
-/*
-initial begin
 
-	for(i = 0; i < 32; i = i+1)
-		begin
-			n <= 8'hffff0000;
-			d <= 8'hffff0000;
-			c <= 8'hffff0000;
-			
-			n <= 8'hffff0000;
-			d <= 8'hffff0000;
-			c <= 8'hffff0000;
-					
-		end
-		
-	end	
-*/
-
+	//input
 	initial begin
-			
+			enIn <= 1'b1;
+			enOut <= 1'b0;
+			#5
 			n <= 32'hffffffff;
 			d <= 32'hffffffff;
 			c <= 32'hffffffff;
-			#15
+			#10
 			n <= 32'h00000000;
 			d <= 32'h00000000;
 			c <= 32'h00000000;
-	end
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			#10
+			n <= 32'hffffffff;
+			d <= 32'hffffffff;
+			c <= 32'hffffffff;
+			#10
+			n <= 32'h00000000;
+			d <= 32'h00000000;
+			c <= 32'h00000000;
+			
+			
 
+	end
+	//output
+	initial begin
+		
+	#335
+	enIn <= 1'b0;
+	enOut <= 1'b1;
+	end
 endmodule
 
